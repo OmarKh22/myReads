@@ -34,7 +34,7 @@ const Search = () => {
               <ol className="books-grid">
                 {searchdata.length>0&&searchdata.map((item)=>{
                     if(item.authors&&item.imageLinks&&item.imageLinks.thumbnail){
-                    return <Book id={item.id} img={item.imageLinks.thumbnail} title={item.title} authors={item.authors}/>
+                    return <Book  id={item.id} img={item.imageLinks.thumbnail} title={item.title} authors={item.authors}/>
                     }
                 })}
                 {searchdata.length===0&&

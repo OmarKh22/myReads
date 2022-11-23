@@ -45,9 +45,9 @@ const [count,setcount]=useState(0)
             </div>
             <div className="list-books-content">
               <div>
-                <Shelf name="Currently Reading" data={readingsCurr} setcount={setcount}/>
-                <Shelf name="Want to read" data={readingsWant} setcount={setcount}/>
-                <Shelf name="Read" data={readingsRead} setcount={setcount}/>
+                <Shelf  name="Currently Reading" shelf="currentlyReading" data={readingsCurr} count={count} setcount={setcount}/>
+                <Shelf name="Want to read" shelf="wantToRead" data={readingsWant}count={count} setcount={setcount}/>
+                <Shelf name="Read" shelf="read" data={readingsRead}count={count} setcount={setcount}/>
                
               </div>
             </div>
