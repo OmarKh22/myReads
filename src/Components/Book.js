@@ -22,7 +22,7 @@ const Book = ({id,img,title,authors,setcount, count}) => {
       const getData = async()=>{
         
         const data=await get(id)
-        console.log(data)
+        // console.log(data)
         setShelfName(data.shelf)
         console.log("shelfname", shelfName,id)
       }
